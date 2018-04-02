@@ -1,0 +1,39 @@
+Author: Tyler Van Hoomissen
+
+Install
+
+$ cd grunt
+$ npm install
+
+Installing selenium for local runs
+
+$ cd grunt
+$ grunt shell:install_selenium
+$ grunt shell:start_selenium
+
+
+Running against the selenium hub
+
+$ cd grunt
+$ grunt test:e2e:build --repo_name=saas-portal-tyler
+
+Replace repo name with your own. This will run the tests against the selenium hub,
+which runs against that repo on Hercules.
+
+
+Running locally against selenium
+
+$ cd grunt
+$ grunt shell:start_selenium
+Open new tab
+$ cd grunt
+$ grunt test:e2e
+
+
+Development
+
+Needed documentation to write tests:
+- Intern: https://theintern.github.io/intern
+- LeadFoot: https://theintern.github.io/leadfoot
+- Chai Assert: http://chaijs.com/api/assert/
+- Faker: http://marak.com/faker.js/
